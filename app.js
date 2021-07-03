@@ -32,6 +32,7 @@ function gorjeta_calc() {
 document.getElementById("pag_p_pessoa").style.display = "none";
 document.getElementById("p_pess").style.display = "none";
 
+//Chamando a função principal
 document.getElementById("calcule").onclick = function () {
     gorjeta_calc();
 };
