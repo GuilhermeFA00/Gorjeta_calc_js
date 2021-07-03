@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A gorjeta</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Calculadora para gorjetas!</h1>
+
+        <h3>Por favor, avalie o serviço do garçom e premie o mesmo, ou não.</h3>
+        <div id="calc">
+            <form>
+                <p>Qual foi o preço de seus pedidos?
+                <p>
+                    R$ <input type="text" id="preço_tot" placeholder="Digite o preço">
+
+                <p>O que achou do serviço do nosso garçom?
+                <p>
+                    <select id="RatingServ">
+                        <option disabled selected value="0">/// Avalie ///</option>
+                        <option value="0.3">30&#37; &#45; Ótima</option>
+                        <option value="0.2">20&#37; &#45; Bom</option>
+                        <option value="0.15">15&#37; &#45; Médio</option>
+                        <option value="0.1">10&#37; &#45; Ruim</option>
+                        <option value="0.05">5&#37; &#45; Horrível</option>
+                    </select>
+
+            </form>
+
+            <div id="alert">
+                <h3>Como a avaliação foi geral,então o preço será pago por cada pessoa na mesa</h3>
+            </div>
+            <p>Têm quanats pessoas na mesa?</p>
+            <input id="pessoas_tot" type="text" placeholder="Número de pessoas"> Pessoas
+            <button type="button" id="calcule">Gere o valor</button>
+
+        </div>
+
+        <div id="pag_p_pessoa">
+            <sup>$</sup><span id="gorjeta">0.00</span>
+            <small id="p_pess">por pessoa</small>
+        </div>
+
+    </div>
+
+
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
