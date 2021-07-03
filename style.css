@@ -104,7 +104,7 @@ button:active {
 }
 
 #pag_p_pessoa::before {
-    content: "Tip amount";
+    content: "Gorjeta p/pessoa";
     font-size: 20px;
     font-weight: bold;
     display: block;
