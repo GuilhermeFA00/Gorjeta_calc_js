@@ -1,38 +1,35 @@
-//Criando a função para calcular o valor da gorjeta
+//Function for calculute the value of tip
 
-function gorjeta_calc() {
-    var preço_tot = document.getElementById("preço_tot").value;
-    var RatingServ = document.getElementById("RatingServ").value;
-    var pessoas = document.getElementById("pessoas_tot").value;
+function tip_calc() {
+    var value_tot = document.getElementById('value_tot').value;
+    var ratingService = document.getElementById('RatingServ').value;
+    var people = document.getElementById('hm_people').value;
 
-
-    //Estrutura condicional p/ avaliar a entrada do usuário
-    if (preço_tot === "" || RatingServ == 0) {
-        alert("Coloque os valores");
-        return;
+    if (value_tot === " " || ratingService == 0) {
+        alert("!Input the values!")
+        throw new Error("!Input the values!")
     }
 
-    if (pessoas === "" || pessoas <= 1) {
-        pessoas = 1;
-        //Se houver apenas uma pessoa,o display é não irá mostrar nada!
-        document.getElementById("p_pess").style.display = "none";
+    if (people === " " || people <= 1) {
+        people = 1;
+        document.getElementById('for_each').style.display = "none";
     } else {
-        document.getElementById("p_pess").style.display = "block";
+        document.getElementById('for_each').style.display = "block";
     }
 
-    //Calculando o valor da gorjeta
-    var valor = (preço_tot * RatingServ) / pessoas;
-    valor = Math.round(valor * 100) / 100;
-    valor = valor.toFixed(2);
-    document.getElementById("pag_p_pessoa").style.display = "block";
-    document.getElementById("gorjeta").innerHTML = valor;
-
+    //Math calcs for value of tip
+    var price = (value_tot * ratingService) / people;
+    price = Math.round(price * 100) / 100;
+    price = price.toFixed(2);
+    document.getElementById('price_FE').style.display = "block";
+    document.getElementById('tip').innerHTML = price;
 };
 
-document.getElementById("pag_p_pessoa").style.display = "none";
-document.getElementById("p_pess").style.display = "none";
 
-//Chamando a função principal
-document.getElementById("calcule").onclick = function () {
-    gorjeta_calc();
+document.getElementById('price_FE').style.display = "none";
+document.getElementById('for_each').style.display = "none";
+
+
+document.getElementById('calcule').onclick = function () {
+    tip_calc()
 };

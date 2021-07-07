@@ -1,7 +1,6 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: -webkit-linear-gradient(to left, #b91cf7, #1F1C18);
-    background: linear-gradient(to left, #07000c, #9400cf);
+    background: url('https://res-3.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1518091145/kanagawa/Kanagawa_29503683');
 }
 
 #container {
@@ -15,7 +14,7 @@ body {
     -moz-border-radius: 20px;
 }
 
-h1 {
+#apr {
     background: #1F030C;
     color: white;
     margin: 0;
@@ -27,8 +26,12 @@ h1 {
     border-top-right-radius: 20px;
 }
 
+#message{
+    margin-left: 60px;
+}    
+
 p {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 form input[type="text"] {
@@ -39,28 +42,30 @@ input {
     padding-left: 20px;
 }
 
-#preço_tot {
+#value_tot {
     font-size: 14px;
     /*color: #2980b9;*/
     color: rgb(255, 0, 242);
     background-color: #f7f7f7;
     width: 60%;
     padding: 5px 5px 8px 8px;
+    margin-left: 30px;
 }
 
-#preço_tot:focus {
+#value_tot:focus {
     background: #fff;
     border: 3px solid #fa4e57;
     outline: none;
 }
 
-#pessoas_tot {
+#hm_people {
     width: 60%;
     padding: 5px 5px 8px 8px;
-    margin-left: 20px;
+    margin-left: 50px;
     color: red;
     background-color: #f7f7f7;
     font-size: 14px;
+    margin-left: 55px;
 }
 
 #RatingServ {
@@ -97,26 +102,26 @@ button:active {
     color: #fa4e57;
 }
 
-#pag_p_pessoa {
+#price_FE {
     font-size: 30px;
     margin-top: 5px;
     text-align: center;
 }
 
-#pag_p_pessoa::before {
-    content: "Gorjeta p/pessoa";
+#price_FE::before {
+    content: "Tip for people";
     font-size: 20px;
     font-weight: bold;
     display: block;
     text-transform: uppercase;
 }
 
-#pag_p_pessoa sup {
+#price_FE sup {
     font-size: 20px;
     top: -18px;
 }
 
-#pag_p_pessoa small {
+#price_FE small {
     font-size: 20px;
     font-weight: bold;
     display: block;

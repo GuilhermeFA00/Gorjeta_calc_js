@@ -11,40 +11,39 @@
 
 <body>
     <div id="container">
-        <h1>Calculadora para gorjetas!</h1>
+        <h1 id="apr">TIP CALCULATOR!</h1>
 
-        <h3>Por favor, avalie o serviço do garçom e premie o mesmo, ou não.</h3>
+        <h3 id="message">Evaluete our service!</h3>
         <div id="calc">
             <form>
-                <p>Qual foi o preço de seus pedidos?
-                <p>
-                    R$ <input type="text" id="preço_tot" placeholder="Digite o preço">
-
-                <p>O que achou do serviço do nosso garçom?
+                <p>What do you think from our waiter ?
                 <p>
                     <select id="RatingServ">
-                        <option disabled selected value="0">/// Avalie ///</option>
-                        <option value="0.3">30&#37; &#45; Ótima</option>
-                        <option value="0.2">20&#37; &#45; Bom</option>
-                        <option value="0.15">15&#37; &#45; Médio</option>
-                        <option value="0.1">10&#37; &#45; Ruim</option>
-                        <option value="0.05">5&#37; &#45; Horrível</option>
+                        <option disabled selected value="0">/// EVALUATE ///</option>
+                        <option value="0.3">30&#37; &#45; Very Good </option>
+                        <option value="0.2">20&#37; &#45; Good</option>
+                        <option value="0.15">15&#37; &#45; Ordinary</option>
+                        <option value="0.1">10&#37; &#45; Bad</option>
+                        <option value="0.05">5&#37; &#45; Terrible</option>
                     </select>
 
-            </form>
+                <p>Which was the value of your orders?
+                <p>
+                    <input type="text" id="value_tot" placeholder="Type the value">R$
 
+            </form>
             <div id="alert">
-                <h3>Como a avaliação foi geral,então o preço será pago por cada pessoa na mesa</h3>
+                <h3>The assessment was general, so the price will pay for each </h3>
             </div>
-            <p>Têm quanats pessoas na mesa?</p>
-            <input id="pessoas_tot" type="text" placeholder="Número de pessoas"> Pessoas
-            <button type="button" id="calcule">Gere o valor</button>
+            <p>how many people are at the table?</p>
+            <input id="hm_people" type="text" placeholder="How many?">
+            <button type="button" id="calcule">generete the value</button>
 
         </div>
 
-        <div id="pag_p_pessoa">
-            <sup>R$</sup><span id="gorjeta">0.00</span>
-            <small id="p_pess">por pessoa</small>
+        <div id="price_FE">
+            <sup>R$</sup><span id="tip">0.00</span>
+            <small id="for_each">for each</small>
         </div>
 
     </div>
