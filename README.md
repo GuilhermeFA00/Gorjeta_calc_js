@@ -1,5 +1,5 @@
 # Gorjeta_calc_js
 
-Calculadora de gorjeta por avaliação
+Tip Calculator
 
 -HTML, CSS e Javascript vanilla
